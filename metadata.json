@@ -1,0 +1,6 @@
+{
+  "name": "Distinction ZA",
+  "description": "Comprehensive South African CAPS-aligned learning platform for Grades 1–12 by Dac Technologies, featuring phase-adaptive UI, AI tutoring, practice assessments, and parent/teacher portals.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
