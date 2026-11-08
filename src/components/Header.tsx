@@ -19,6 +19,7 @@ import { LearnerProfile, PhaseId } from '../types/curriculum';
 import { UserRole, UserStore } from '../services/userStore';
 import { PHASES, getPhaseForGrade } from '../data/curriculumData';
 import { DistinctionAppIcon } from './DistinctionAppIcon';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface HeaderProps {
   profile: LearnerProfile;
@@ -198,6 +199,9 @@ export const Header: React.FC<HeaderProps> = ({
             <span>{profile.studyStreakDays}</span>
             <span className="hidden sm:inline text-[11px] font-medium text-orange-600">days</span>
           </div>
+
+          {/* Webapp Install Button */}
+          <PWAInstallButton variant="header" />
 
           {/* Virtual Study Room / Lounge Button */}
           {onOpenStudyRoom && (

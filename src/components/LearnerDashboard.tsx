@@ -24,6 +24,7 @@ import { ALL_SUBJECTS } from '../data/curriculumData';
 import { StudyStreakHeatmap } from './StudyStreakHeatmap';
 import { FullQuestionPaper } from '../types/fullPaper';
 import { GRADE_12_FULL_PAPERS } from '../data/grade12FullPapers';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface LearnerDashboardProps {
   profile: LearnerProfile;
@@ -290,6 +291,9 @@ export const LearnerDashboard: React.FC<LearnerDashboardProps> = ({
           </div>
         </div>
       )}
+
+      {/* Install Distinction ZA Webapp Banner */}
+      <PWAInstallButton variant="banner" />
 
       {/* Subject Navigation Tabs for Active Grade */}
       <div className="space-y-3">
